@@ -1,6 +1,6 @@
 # Take Home Test - Back-end
 
-## Commands
+## Setups
 
 1. **Installation**: To install the required packages, run the following command:
    ```
