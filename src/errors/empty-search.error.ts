@@ -1,8 +1,8 @@
 import { ApplicationError } from '../protocols';
 
-export function emptyResearchError(): ApplicationError {
+export function emptySearchError(): ApplicationError {
     return {
-        name: 'EmptyResearchError',
+        name: 'EmptySearchError',
         message: 'No matching results were found',
     };
 }

@@ -1,4 +1,4 @@
-import app, { init } from '../src/app'
+import app, { close, init } from '../src/app'
 import { prisma } from '../src/config/database';
 import supertest from 'supertest';
 import httpStatus from 'http-status';
@@ -6,6 +6,10 @@ import fs from 'fs';
 
 beforeAll(async () => {
   await init();
+});
+
+afterAll(async () => {
+  await close();
 });
 
 beforeEach(async () => {

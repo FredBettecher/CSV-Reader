@@ -1,5 +1,5 @@
 import { prisma } from '../src/config/database';
-import app, { init } from '../src/app';
+import app, { close, init } from '../src/app';
 import supertest from 'supertest';
 import httpStatus from 'http-status';
 import { populateDB } from './factories/users.factory';
@@ -12,6 +12,7 @@ beforeAll(async () => {
 
 afterAll(async () => {
   await prisma.users.deleteMany({});
+  await close();
 });
 
 const server = supertest(app);

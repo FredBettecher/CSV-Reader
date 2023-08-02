@@ -2,14 +2,16 @@
   "name": "shawandpartners-backend-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
     "build": "tsc",
     "migrate": "prisma migrate dev",
     "deploy": "prisma migrate deploy",
     "start": "node dist/server.js",
+    "predev": "npm run migrate && npm run deploy",
     "dev": "ts-node-dev src/server.ts",
-    "tests": "jest --passWithNoTests --runInBand"
+    "tests": "jest --passWithNoTests --runInBand",
+    "coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
