@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import apiRouter from './routes/api.routes';
 import { connectDB, disconnectDB } from './config/database';
-import { handleApplicationErrors } from './middlewares/error-handling.middlewear';
+import { handleApplicationErrors } from './middlewares/error-handling.middleware';
 
 dotenv.config();
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1690985365387" clover="3.2.0">
-  <project timestamp="1690985365389" name="All files">
+<coverage generated="1691005435072" clover="3.2.0">
+  <project timestamp="1691005435072" name="All files">
     <metrics statements="121" coveredstatements="113" conditionals="9" coveredconditionals="6" methods="25" coveredmethods="23" elements="155" coveredelements="142" complexity="0" loc="121" ncloc="121" packages="9" files="16" classes="16"/>
     <package name="src">
       <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -102,7 +102,7 @@
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
       </file>
-      <file name="error-handling.middlewear.ts" path="/root/shawandpartners-backend-test/src/middlewares/error-handling.middlewear.ts">
+      <file name="error-handling.middleware.ts" path="/root/shawandpartners-backend-test/src/middlewares/error-handling.middleware.ts">
         <metrics statements="12" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="6"/>
         <line num="3" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
@@ -191,11 +191,11 @@
       <file name="users.factory.ts" path="/root/shawandpartners-backend-test/tests/factories/users.factory.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
       </file>
     </package>
   </project>

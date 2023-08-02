@@ -24,7 +24,7 @@ const errors = {
     },
 
     EmptyDataError(err: ApplicationError, res: Response) {
-        return res.status(httpStatus.NO_CONTENT).send({
+        return res.status(httpStatus.BAD_REQUEST).send({
             name: err.name,
             message: err.message,
         });

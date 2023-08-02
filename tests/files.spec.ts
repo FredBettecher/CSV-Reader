@@ -50,11 +50,11 @@ describe('POST /api/files', () => {
     expect(response.status).toBe(httpStatus.NOT_ACCEPTABLE);
   });
 
-  it('should respond with status 204 if file is empty', async () => {
+  it('should respond with status 400 if file is empty', async () => {
     fs.writeFileSync('example.csv', '');
     const response = await server.post('/api/files').attach('file', 'example.csv');
 
-    expect(response.status).toBe(httpStatus.NO_CONTENT);
+    expect(response.status).toBe(httpStatus.BAD_REQUEST);
   });
 
   it('should respond with status 201 if there is a file with data', async () => {

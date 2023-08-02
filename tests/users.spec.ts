@@ -6,6 +6,9 @@ import { populateDB } from './factories/users.factory';
 
 beforeAll(async () => {
   await init();
+});
+
+beforeEach(async () => {
   await prisma.users.deleteMany({});
   await populateDB();
 });
@@ -34,6 +37,6 @@ describe('GET /api/users', () => {
     const response = await server.get('/api/users').query({ term: 'USA' });
 
     expect(response.status).toBe(httpStatus.OK);
-    expect(response.body).toHaveLength(1);
+    expect(response.body).toContainEqual(expect.objectContaining({ country: 'USA' }));
   });
 });

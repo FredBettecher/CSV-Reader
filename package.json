@@ -10,7 +10,7 @@
     "start": "node dist/server.js",
     "predev": "npm run migrate && npm run deploy",
     "dev": "ts-node-dev src/server.ts",
-    "tests": "jest --passWithNoTests --runInBand",
+    "tests": "jest --verbose --passWithNoTests --runInBand",
     "coverage": "jest --coverage"
   },
   "keywords": [],
