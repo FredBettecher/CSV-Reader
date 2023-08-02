@@ -27,6 +27,10 @@
 
 To upload a .csv file, make a POST request to the route '/api/files'. Use the "Files" field in the request body with the name "file". The server will handle the file upload.
 
+![alt text](https://i.imgur.com/zYmPm9J.png)
+
 ## Searching for a Term
 
 To search for a term, make a GET request to the route '/api/users/'. Include a query parameter named "term" with the desired search term. The server will process the request and return the appropriate results.
+
+![alt text](https://i.imgur.com/DTfiQPz.png)
